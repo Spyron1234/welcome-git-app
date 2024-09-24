@@ -23,7 +23,7 @@ class WelcomeAppApplicationTests {
 
 	@Test
 	public void testHelloEndpoint() throws Exception {
-		LOGGER.info("Test Case run start for controller");
+		LOGGER.info("Test Case run start for controller layer");
 		mockMvc.perform(get("/welcome/msg")).andExpect(status().isOk()).andExpect(content().string("Welcome to git"));
 	}
 
